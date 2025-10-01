@@ -1,0 +1,13 @@
+Harita-1-TR
+
+<iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d532.2710594404293!2d28.912170012681!3d41.00382203392297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabbaf52028e3b%3A0xa19934292f8ad992!2sTelsiz%2C%20Menek%C5%9Fe%20Sk.%20No%3A12%20Kat%3A%201%20Daire%3A%202%2C%2034020%20Zeytinburnu%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1758377439684!5m2!1str!2str" style="border:0;" width="600"></iframe>
+
+Harita-2-RM
+<iframe allowfullscreen="" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.1334468119717!2d26.115258312023286!3d44.491932370954025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b203006e5ec9a3%3A0x50acedf3812706c0!2sA1c!5e0!3m2!1str!2str!4v1755700257589!5m2!1str!2str" style="border:0;" width="600"></iframe>
+
+
+
+Seo Başlık
+Gesa Tente | Pergole Tente Sistemleri, tente, wintent tente, kamyonet tentesi, deprem afet çadırı, çadır, pergola servis tamir, tenteci
+Seo Açıklama
+Gesa Pergole Tente Sistemleri, wintent, deprem afet çadırı, wintent tente, tünel tente, körüklü tente, servis, tamir bakım onarım imalat konularında İstanbul Kağıthane'de hizmet vermektedir.

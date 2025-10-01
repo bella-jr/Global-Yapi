@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F302FD8-84D1-4171-BC32-CCC0898F25FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KZ.DataAccess</RootNamespace>
+    <AssemblyName>KZ.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IArticleDal.cs" />
+    <Compile Include="Abstract\IBlogDal.cs" />
+    <Compile Include="Abstract\IMostSearchedDal.cs" />
+    <Compile Include="Abstract\IPopupDal.cs" />
+    <Compile Include="Abstract\ICommentDal.cs" />
+    <Compile Include="Abstract\IExternalArticleDal.cs" />
+    <Compile Include="Abstract\IGalleryDal.cs" />
+    <Compile Include="Abstract\IGalleryImageDal.cs" />
+    <Compile Include="Abstract\IGeneralSettingDal.cs" />
+    <Compile Include="Abstract\IHomePageContentDal.cs" />
+    <Compile Include="Abstract\ILanguageDal.cs" />
+    <Compile Include="Abstract\ILoginLogDal.cs" />
+    <Compile Include="Abstract\IMailSettingDal.cs" />
+    <Compile Include="Abstract\IMenuDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\IProductImageDal.cs" />
+    <Compile Include="Abstract\IProductMenuDal.cs" />
+    <Compile Include="Abstract\IProductPropertyDal.cs" />
+    <Compile Include="Abstract\IPropertyDal.cs" />
+    <Compile Include="Abstract\IPropertyGroupDal.cs" />
+    <Compile Include="Abstract\IReferenceDal.cs" />
+    <Compile Include="Abstract\ISeoPageDal.cs" />
+    <Compile Include="Abstract\ISeoUrlRedirectDal.cs" />
+    <Compile Include="Abstract\ISliderDal.cs" />
+    <Compile Include="Abstract\ISssDal.cs" />
+    <Compile Include="Abstract\ITabFilterDal.cs" />
+    <Compile Include="Abstract\ITabFilterProductDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfArticleDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfBlogDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCommentDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfExternalArticleDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfGalleryImageDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfGalleryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfGeneralSettingDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfHomePageContentDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfLanguageDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfLoginLogDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMailSettingDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMenuDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMostSearchedDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfPopupDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductImageDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductMenuDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductPropertyDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfPropertyDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfPropertyGroupDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfReferenceDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSeoPageDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSeoUrlRedirectDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSliderDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSssDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfTabFilterDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfTabFilterProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KZ.Core\KZ.Core.csproj">
+      <Project>{46c1dd0b-fef9-44e0-a1b7-f18831e76972}</Project>
+      <Name>KZ.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.Entity\KZ.Entity.csproj">
+      <Project>{33f1b92e-bb25-48d9-9de8-db238d6875e6}</Project>
+      <Name>KZ.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

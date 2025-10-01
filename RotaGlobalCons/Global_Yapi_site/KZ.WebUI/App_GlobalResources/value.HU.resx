@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aciklama" xml:space="preserve">
+    <value>Leírás</value>
+  </data>
+  <data name="Adet_urun_bulundu" xml:space="preserve">
+    <value>darab termék található</value>
+  </data>
+  <data name="Adiniz" xml:space="preserve">
+    <value>Neve</value>
+  </data>
+  <data name="Adiniz_Soyadiniz" xml:space="preserve">
+    <value>Teljes neve</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Cím</value>
+  </data>
+  <data name="Anasayfa" xml:space="preserve">
+    <value>Főoldal</value>
+  </data>
+  <data name="Anasayfa_Don" xml:space="preserve">
+    <value>Vissza a főoldalra</value>
+  </data>
+  <data name="Bize_Mesaj_Gonderin" xml:space="preserve">
+    <value>Üzenet küldése nekünk</value>
+  </data>
+  <data name="Bize_Ulasin" xml:space="preserve">
+    <value>Lépjen kapcsolatba velünk</value>
+  </data>
+  <data name="Bizimle_Iletisime_Gec" xml:space="preserve">
+    <value>Vegye fel velünk a kapcsolatot</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Detayi_Gor" xml:space="preserve">
+    <value>Részletek megtekintése</value>
+  </data>
+  <data name="Detaylar" xml:space="preserve">
+    <value>Részletek</value>
+  </data>
+  <data name="Detayli_Bilgi_icin" xml:space="preserve">
+    <value>További információért</value>
+  </data>
+  <data name="Devami" xml:space="preserve">
+    <value>Tovább</value>
+  </data>
+  <data name="EklenmeTarihi" xml:space="preserve">
+    <value>Hozzáadás dátuma</value>
+  </data>
+  <data name="E_Katalog" xml:space="preserve">
+    <value>E-KATALÓGUS</value>
+  </data>
+  <data name="E_Posta" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="footer_Hakkimizda" xml:space="preserve">
+    <value>A Global İnşaat egy innovatív és ügyfélközpontú vállalat, amely erős múlttal rendelkezik az építőiparban. Az 1990-es évek eleje óta a Global İnşaat kiváló minőségű kivitelezéssel és megbízható projektekkel van jelen az iparágban, és számos jelentős projektet valósított meg belföldön és külföldön egyaránt.</value>
+  </data>
+  <data name="formBasariliMesaj" xml:space="preserve">
+    <value>Üzenete sikeresen megérkezett hozzánk. Hamarosan felvesszük Önnel a kapcsolatot.</value>
+  </data>
+  <data name="formHataliMesaj" xml:space="preserve">
+    <value>Hiba történt az üzenet küldése közben. Kérjük, próbálja meg később újra.</value>
+  </data>
+  <data name="Galeri" xml:space="preserve">
+    <value>Galéria</value>
+  </data>
+  <data name="Gonder" xml:space="preserve">
+    <value>Küldés</value>
+  </data>
+  <data name="Guvenlik_Kodu" xml:space="preserve">
+    <value>Biztonsági kód</value>
+  </data>
+  <data name="Guvenlik_Kodu_Hatali" xml:space="preserve">
+    <value>Hibás biztonsági kód</value>
+  </data>
+  <data name="Hizli_Erisim" xml:space="preserve">
+    <value>Gyors elérés</value>
+  </data>
+  <data name="Hizmetlerimiz" xml:space="preserve">
+    <value>Szolgáltatásaink</value>
+  </data>
+  <data name="icin" xml:space="preserve">
+    <value>számára</value>
+  </data>
+  <data name="iletisim" xml:space="preserve">
+    <value>Kapcsolat</value>
+  </data>
+  <data name="iletisimFormu" xml:space="preserve">
+    <value>Kapcsolati űrlap</value>
+  </data>
+  <data name="iletisim_AltBaslik" xml:space="preserve">
+    <value>Az alábbi űrlap kitöltésével kapcsolatba léphet velünk.</value>
+  </data>
+  <data name="Iletisim_Bilgileri" xml:space="preserve">
+    <value>Kapcsolattartási adatok</value>
+  </data>
+  <data name="incele" xml:space="preserve">
+    <value>Megtekintés</value>
+  </data>
+  <data name="Konu" xml:space="preserve">
+    <value>Tárgy</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menü</value>
+  </data>
+  <data name="Menuler" xml:space="preserve">
+    <value>Menük</value>
+  </data>
+  <data name="Mesajiniz" xml:space="preserve">
+    <value>Üzenete</value>
+  </data>
+  <data name="Mesaj_Bilgilendirme" xml:space="preserve">
+    <value>Üzenet értesítés</value>
+  </data>
+  <data name="Mesaj_Yollayin" xml:space="preserve">
+    <value>Üzenet küldése</value>
+  </data>
+  <data name="Projelerimiz" xml:space="preserve">
+    <value>Projektjeink</value>
+  </data>
+  <data name="Referanslar" xml:space="preserve">
+    <value>Referenciák</value>
+  </data>
+  <data name="SayfaBulanamadi_Aciklama" xml:space="preserve">
+    <value>Sajnáljuk, a keresett oldal nem létezik, eltávolították vagy átmenetileg nem elérhető.</value>
+  </data>
+  <data name="Sayfa_Bulunamadi" xml:space="preserve">
+    <value>Az oldal nem található</value>
+  </data>
+  <data name="Sidebar_Aciklama" xml:space="preserve">
+    <value>Global İnşaat: A kiválóság neve az iparágban</value>
+  </data>
+  <data name="Sosyal_Medya" xml:space="preserve">
+    <value>Közösségi média</value>
+  </data>
+  <data name="Soyadiniz" xml:space="preserve">
+    <value>Vezetékneve</value>
+  </data>
+  <data name="Teklif_Al" xml:space="preserve">
+    <value>Ajánlatkérés</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="TumHaklariSaklidir" xml:space="preserve">
+    <value>Minden jog fenntartva.</value>
+  </data>
+  <data name="Tumu" xml:space="preserve">
+    <value>Összes</value>
+  </data>
+  <data name="TumunuGor" xml:space="preserve">
+    <value>Összes megtekintése</value>
+  </data>
+  <data name="url_Blog" xml:space="preserve">
+    <value>/blog</value>
+  </data>
+  <data name="url_Folder" xml:space="preserve">
+    <value>hu</value>
+  </data>
+  <data name="url_FormBasarili" xml:space="preserve">
+    <value>/form-success</value>
+  </data>
+  <data name="url_Galeri" xml:space="preserve">
+    <value>/gallery</value>
+  </data>
+  <data name="url_Iletisim" xml:space="preserve">
+    <value>/contact</value>
+  </data>
+  <data name="url_Kategori" xml:space="preserve">
+    <value>/category</value>
+  </data>
+  <data name="url_Kategoriler" xml:space="preserve">
+    <value>/categories</value>
+  </data>
+  <data name="url_Menu" xml:space="preserve">
+    <value>/menu</value>
+  </data>
+  <data name="url_Sayfa" xml:space="preserve">
+    <value>/page</value>
+  </data>
+  <data name="url_Urun" xml:space="preserve">
+    <value>/project</value>
+  </data>
+  <data name="Urunlerimiz" xml:space="preserve">
+    <value>Termékek</value>
+  </data>
+  <data name="Urunlerimiz_AltBaslik" xml:space="preserve">
+    <value>Minőségi és tartós termékeink</value>
+  </data>
+  <data name="Uygulama_Alanlari" xml:space="preserve">
+    <value>Alkalmazási területek</value>
+  </data>
+  <data name="Uygulama_Alanlari_AltBaslik" xml:space="preserve">
+    <value>Szektorok, ahol hidraulikus technológiáink életre kelnek</value>
+  </data>
+  <data name="whatsapp" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="Whatsapp_Sor" xml:space="preserve">
+    <value>Kérdezzen WhatsApp-on</value>
+  </data>
+  <data name="Yapilan_Projeler" xml:space="preserve">
+    <value>Megvalósított projektek</value>
+  </data>
+  <data name="Yeni_Haberler" xml:space="preserve">
+    <value>Friss hírek</value>
+  </data>
+  <data name="Yorumlar" xml:space="preserve">
+    <value>Hozzászólások</value>
+  </data>
+  <data name="Yorumlar_Alt_Baslik" xml:space="preserve">
+    <value>Vásárlói elégedettségi vélemények</value>
+  </data>
+</root>

@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Ömer Faruk Özkan\Desktop\Labels_Publish</_PublishTargetUrl>
+    <History>True|2025-03-12T12:46:11.4854035Z||;True|2025-03-11T12:11:45.2250347+03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/value.resx">
+      <publishTime>03/11/2025 13:07:03</publishTime>
+    </File>
+    <File Include="bin/CKEditor.NET.dll">
+      <publishTime>06/15/2022 17:27:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/16/2024 23:46:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/16/2024 23:47:02</publishTime>
+    </File>
+    <File Include="bin/Facebook.dll">
+      <publishTime>04/13/2015 18:48:00</publishTime>
+    </File>
+    <File Include="bin/ImageResizer.dll">
+      <publishTime>06/15/2022 17:27:00</publishTime>
+    </File>
+    <File Include="bin/Iyzipay.dll">
+      <publishTime>12/26/2024 15:35:44</publishTime>
+    </File>
+    <File Include="bin/KZ.Business.dll">
+      <publishTime>03/12/2025 15:46:10</publishTime>
+    </File>
+    <File Include="bin/KZ.Business.dll.config">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="bin/KZ.Business.pdb">
+      <publishTime>03/12/2025 15:46:10</publishTime>
+    </File>
+    <File Include="bin/KZ.Core.dll">
+      <publishTime>03/06/2025 15:48:16</publishTime>
+    </File>
+    <File Include="bin/KZ.Core.dll.config">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="bin/KZ.Core.pdb">
+      <publishTime>03/06/2025 15:48:16</publishTime>
+    </File>
+    <File Include="bin/KZ.DataAccess.dll">
+      <publishTime>03/12/2025 15:46:09</publishTime>
+    </File>
+    <File Include="bin/KZ.DataAccess.dll.config">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="bin/KZ.DataAccess.pdb">
+      <publishTime>03/12/2025 15:46:09</publishTime>
+    </File>
+    <File Include="bin/KZ.Entity.dll">
+      <publishTime>03/12/2025 15:46:09</publishTime>
+    </File>
+    <File Include="bin/KZ.Entity.dll.config">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="bin/KZ.Entity.pdb">
+      <publishTime>03/12/2025 15:46:09</publishTime>
+    </File>
+    <File Include="bin/KZ.WebUI.dll">
+      <publishTime>03/12/2025 15:46:10</publishTime>
+    </File>
+    <File Include="bin/KZ.WebUI.pdb">
+      <publishTime>03/12/2025 15:46:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.Bson.dll">
+      <publishTime>11/28/2018 02:10:18</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.Bson.pdb">
+      <publishTime>11/28/2018 02:07:54</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 10:09:56</publishTime>
+    </File>
+    <File Include="bin/Ninject.dll">
+      <publishTime>05/27/2022 18:01:24</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>02/19/2020 13:05:18</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>05/08/2022 06:31:02</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/20/2023 23:33:52</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>02/19/2020 13:05:16</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>02/19/2020 13:05:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/20/2023 23:34:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/20/2023 23:34:08</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>03/10/2025 17:05:53</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>03/10/2025 15:16:07</publishTime>
+    </File>
+    <File Include="General_Pages/BlogDetail.aspx">
+      <publishTime>03/10/2025 15:16:07</publishTime>
+    </File>
+    <File Include="General_Pages/BlogList.aspx">
+      <publishTime>03/10/2025 15:29:42</publishTime>
+    </File>
+    <File Include="General_Pages/CategorySubList.aspx">
+      <publishTime>03/10/2025 17:08:14</publishTime>
+    </File>
+    <File Include="General_Pages/Contact.aspx">
+      <publishTime>03/10/2025 15:16:07</publishTime>
+    </File>
+    <File Include="General_Pages/FormSuccess.aspx">
+      <publishTime>03/10/2025 15:16:07</publishTime>
+    </File>
+    <File Include="General_Pages/MenuList.aspx">
+      <publishTime>03/10/2025 17:26:08</publishTime>
+    </File>
+    <File Include="General_Pages/ReferenceList.aspx">
+      <publishTime>03/12/2025 15:45:53</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="MailTemplate/TR/AddUserInformation.html">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="MailTemplate/TR/AdminInformation.html">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="MailTemplate/TR/ContactForm.html">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="MailTemplate/TR/ForgetPassword.html">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="MailTemplate/TR/UserRegisterVerify.html">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>03/11/2025 13:04:09</publishTime>
+    </File>
+    <File Include="Management/AdminAdd.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/AdminList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/AdminUpdate.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ArticleAdd.aspx">
+      <publishTime>03/10/2025 15:52:21</publishTime>
+    </File>
+    <File Include="Management/ArticleList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ArticleUpdate.aspx">
+      <publishTime>03/10/2025 15:20:58</publishTime>
+    </File>
+    <File Include="Management/BlogAdd.aspx">
+      <publishTime>03/06/2025 12:45:25</publishTime>
+    </File>
+    <File Include="Management/BlogList.aspx">
+      <publishTime>03/06/2025 12:53:21</publishTime>
+    </File>
+    <File Include="Management/BlogShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/BlogUpdate.aspx">
+      <publishTime>03/06/2025 12:45:51</publishTime>
+    </File>
+    <File Include="Management/CommentAdd.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/CommentList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/CommentUpdate.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/Dashboard.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/Default.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ExternalArticleAdd.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ExternalArticleList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ExternalArticleUpdate.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ForgetPassword.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/GalleryAdd.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/GalleryList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/GalleryShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/GalleryUpdate.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/GeneralSettingUpdate.aspx">
+      <publishTime>03/10/2025 15:09:38</publishTime>
+    </File>
+    <File Include="Management/HomePageContentUpdate.aspx">
+      <publishTime>03/10/2025 15:09:24</publishTime>
+    </File>
+    <File Include="Management/LoginLogs.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/MailSettingUpdate.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/MenuAdd.aspx">
+      <publishTime>03/11/2025 12:00:50</publishTime>
+    </File>
+    <File Include="Management/MenuList.aspx">
+      <publishTime>03/11/2025 12:01:02</publishTime>
+    </File>
+    <File Include="Management/MenuShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/MostSearchedAdd.aspx">
+      <publishTime>03/06/2025 14:39:08</publishTime>
+    </File>
+    <File Include="Management/MostSearchedList.aspx">
+      <publishTime>03/06/2025 14:39:08</publishTime>
+    </File>
+    <File Include="Management/MostSearchedUpdate.aspx">
+      <publishTime>03/06/2025 14:39:08</publishTime>
+    </File>
+    <File Include="Management/MP.Master">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/PopularProductShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/PopupManagement.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ProductAdd.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/ProductList.aspx">
+      <publishTime>03/06/2025 14:34:07</publishTime>
+    </File>
+    <File Include="Management/ProductShort.aspx">
+      <publishTime>03/06/2025 14:25:50</publishTime>
+    </File>
+    <File Include="Management/ProductUpdate.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/Profile.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/PropertyGroupList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/PropertyList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/PropertyShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/ReferenceAdd.aspx">
+      <publishTime>03/10/2025 15:55:16</publishTime>
+    </File>
+    <File Include="Management/ReferenceCategoryAdd.aspx">
+      <publishTime>03/10/2025 17:11:34</publishTime>
+    </File>
+    <File Include="Management/ReferenceCategoryList.aspx">
+      <publishTime>03/10/2025 17:11:34</publishTime>
+    </File>
+    <File Include="Management/ReferenceCategoryShort.aspx">
+      <publishTime>03/10/2025 17:11:34</publishTime>
+    </File>
+    <File Include="Management/ReferenceCategoryUpdate.aspx">
+      <publishTime>03/10/2025 17:13:14</publishTime>
+    </File>
+    <File Include="Management/ReferenceList.aspx">
+      <publishTime>03/10/2025 15:45:27</publishTime>
+    </File>
+    <File Include="Management/ReferenceShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="Management/ReferenceUpdate.aspx">
+      <publishTime>03/10/2025 15:55:22</publishTime>
+    </File>
+    <File Include="Management/SeoPageList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/SeoPageUpdate.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/AccordionCategoryShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/BlogShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/FooterMenuShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/GalleryImageShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/GalleryShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/HomeCategoryShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/HomeCategoryShortSave2.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/MenuShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/MenuShortSaveLeft.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/MenuShortSaveRight.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/PopularProductShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ProductCategoryOtherSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ProductHomeSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ProductImageShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ProductOtherSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/PropertyShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ReferenceCategoryShortSave.aspx">
+      <publishTime>03/10/2025 15:50:25</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/ReferenceShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/SidebarCategoryShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/SliderShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/ShortSavePages/TabFilterShortSave.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/SliderAdd.aspx">
+      <publishTime>03/10/2025 17:04:54</publishTime>
+    </File>
+    <File Include="Management/SliderList.aspx">
+      <publishTime>03/10/2025 17:06:46</publishTime>
+    </File>
+    <File Include="Management/SliderShort.aspx">
+      <publishTime>03/10/2025 17:07:07</publishTime>
+    </File>
+    <File Include="Management/SliderUpdate.aspx">
+      <publishTime>03/10/2025 17:03:46</publishTime>
+    </File>
+    <File Include="Management/SssAdd.aspx">
+      <publishTime>03/06/2025 13:51:08</publishTime>
+    </File>
+    <File Include="Management/SssList.aspx">
+      <publishTime>03/06/2025 13:51:04</publishTime>
+    </File>
+    <File Include="Management/SssUpdate.aspx">
+      <publishTime>03/06/2025 13:51:01</publishTime>
+    </File>
+    <File Include="Management/TabFilterList.aspx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Management/TabFilterShort.aspx">
+      <publishTime>03/10/2025 16:08:16</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/25/2025 16:23:24</publishTime>
+    </File>
+    <File Include="UserControl/ucManagementPanelMenus.ascx">
+      <publishTime>03/10/2025 17:11:27</publishTime>
+    </File>
+    <File Include="UserControl/ucPageSeo.ascx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="UserControl/ucPaging.ascx">
+      <publishTime>02/25/2025 16:23:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/11/2025 12:11:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

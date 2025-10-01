@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AccordionCategoryShortSave.aspx.cs" Inherits="KZ.WebUI.Management.ShortSavePages.AccordionCategoryShortSave" %>

@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C206617-9CAB-4002-A915-32104D726C3B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KZ.WebUI</RootNamespace>
+    <AssemblyName>KZ.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.4.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageResizer, Version=3.3.3.123, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ImageResizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Iyzipay, Version=2.1.66.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iyzipay.2.1.66\lib\net45\Iyzipay.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.6.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.6\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.3.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.3.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.WorkflowServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="General_Pages\BlogDetail.aspx" />
+    <Content Include="General_Pages\BlogList.aspx" />
+    <Content Include="General_Pages\CategoryList.aspx" />
+    <Content Include="General_Pages\CategorySubList.aspx" />
+    <Content Include="General_Pages\Contact.aspx" />
+    <Content Include="General_Pages\FormSuccess.aspx" />
+    <Content Include="General_Pages\MenuList.aspx" />
+    <Content Include="General_Pages\ProductDetail.aspx" />
+    <Content Include="General_Pages\ReferenceList.aspx" />
+    <Content Include="MailTemplate\TR\AdminInformation.html" />
+    <Content Include="MailTemplate\TR\UserRegisterVerify.html" />
+    <Content Include="Management\BlogShort.aspx" />
+    <Content Include="Management\CommentAdd.aspx" />
+    <Content Include="Management\CommentList.aspx" />
+    <Content Include="Management\CommentUpdate.aspx" />
+    <Content Include="Management\GalleryShort.aspx" />
+    <Content Include="Management\MostSearchedAdd.aspx" />
+    <Content Include="Management\MostSearchedList.aspx" />
+    <Content Include="Management\MostSearchedUpdate.aspx" />
+    <Content Include="Management\PopularProductShort.aspx" />
+    <Content Include="Management\PopupManagement.aspx" />
+    <Content Include="Management\ProductShort.aspx" />
+    <Content Include="Management\ReferenceAdd.aspx" />
+    <Content Include="Management\ReferenceList.aspx" />
+    <Content Include="Management\ReferenceShort.aspx" />
+    <Content Include="Management\ReferenceUpdate.aspx" />
+    <Content Include="Management\ShortSavePages\AccordionCategoryShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\BlogShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\FooterMenuShortSave.aspx" />
+    <Content Include="Management\GalleryAdd.aspx" />
+    <Content Include="Management\ShortSavePages\GalleryImageShortSave.aspx" />
+    <Content Include="Management\GalleryList.aspx" />
+    <Content Include="Management\GalleryUpdate.aspx" />
+    <Content Include="Management\HomePageContentUpdate.aspx" />
+    <Content Include="Management\ProductAdd.aspx" />
+    <Content Include="Management\ShortSavePages\GalleryShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\HomeCategoryShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\HomeCategoryShortSave2.aspx" />
+    <Content Include="Management\ShortSavePages\MenuShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\MenuShortSaveLeft.aspx" />
+    <Content Include="Management\ShortSavePages\MenuShortSaveRight.aspx" />
+    <Content Include="Management\ShortSavePages\PopularProductShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\ProductCategoryOtherSave.aspx" />
+    <Content Include="Management\ShortSavePages\ProductHomeSave.aspx" />
+    <Content Include="Management\ShortSavePages\ProductImageShortSave.aspx" />
+    <Content Include="Management\ProductList.aspx" />
+    <Content Include="Management\ProductUpdate.aspx" />
+    <Content Include="Management\PropertyGroupList.aspx" />
+    <Content Include="Management\PropertyList.aspx" />
+    <Content Include="Management\PropertyShort.aspx" />
+    <Content Include="Management\ShortSavePages\ProductOtherSave.aspx" />
+    <Content Include="Management\ShortSavePages\PropertyShortSave.aspx" />
+    <Content Include="Management\SeoPageList.aspx" />
+    <Content Include="Management\SeoPageUpdate.aspx" />
+    <Content Include="Management\ShortSavePages\ReferenceShortSave.aspx" />
+    <Content Include="Management\ShortSavePages\SidebarCategoryShortSave.aspx" />
+    <Content Include="Management\SssAdd.aspx" />
+    <Content Include="Management\SssList.aspx" />
+    <Content Include="Management\SssUpdate.aspx" />
+    <Content Include="Management\TabFilterList.aspx" />
+    <Content Include="Management\TabFilterShort.aspx" />
+    <Content Include="Management\ShortSavePages\TabFilterShortSave.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Management\MP.Master" />
+    <Content Include="Main.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="MailTemplate\TR\AddUserInformation.html" />
+    <Content Include="MailTemplate\TR\ContactForm.html" />
+    <Content Include="MailTemplate\TR\ForgetPassword.html" />
+    <Content Include="Management\AdminAdd.aspx" />
+    <Content Include="Management\AdminList.aspx" />
+    <Content Include="Management\AdminUpdate.aspx" />
+    <Content Include="Management\ArticleAdd.aspx" />
+    <Content Include="Management\ArticleList.aspx" />
+    <Content Include="Management\ArticleUpdate.aspx" />
+    <Content Include="Management\BlogAdd.aspx" />
+    <Content Include="Management\BlogList.aspx" />
+    <Content Include="Management\BlogUpdate.aspx" />
+    <Content Include="Management\Dashboard.aspx" />
+    <Content Include="Management\Default.aspx" />
+    <Content Include="Management\ExternalArticleAdd.aspx" />
+    <Content Include="Management\ExternalArticleList.aspx" />
+    <Content Include="Management\ExternalArticleUpdate.aspx" />
+    <Content Include="Management\ForgetPassword.aspx" />
+    <Content Include="Management\GeneralSettingUpdate.aspx" />
+    <Content Include="Management\LoginLogs.aspx" />
+    <Content Include="Management\MailSettingUpdate.aspx" />
+    <Content Include="Management\MenuAdd.aspx" />
+    <Content Include="Management\MenuList.aspx" />
+    <Content Include="Management\MenuShort.aspx" />
+    <Content Include="Management\Profile.aspx" />
+    <Content Include="Management\SliderAdd.aspx" />
+    <Content Include="Management\SliderList.aspx" />
+    <Content Include="Management\SliderShort.aspx" />
+    <Content Include="Management\ShortSavePages\SliderShortSave.aspx" />
+    <Content Include="Management\SliderUpdate.aspx" />
+    <Content Include="UserControl\ucManagementPanelMenus.ascx" />
+    <Content Include="UserControl\ucPageSeo.ascx" />
+    <Content Include="UserControl\ucPaging.ascx" />
+    <Content Include="UserControl\ucReference.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\value.EN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>value.EN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\value.HU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>value.HU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\value1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>value.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DependencyResolvers\Ninject\WebUIModule.cs" />
+    <Compile Include="DependencyResolvers\Ninject\WebUIInstanceFactory.cs" />
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\BlogDetail.aspx.cs">
+      <DependentUpon>BlogDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\BlogDetail.aspx.designer.cs">
+      <DependentUpon>BlogDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\BlogList.aspx.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\BlogList.aspx.designer.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\CategoryList.aspx.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\CategoryList.aspx.designer.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\CategorySubList.aspx.cs">
+      <DependentUpon>CategorySubList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\CategorySubList.aspx.designer.cs">
+      <DependentUpon>CategorySubList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\FormSuccess.aspx.cs">
+      <DependentUpon>FormSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\FormSuccess.aspx.designer.cs">
+      <DependentUpon>FormSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\ReferenceList.aspx.cs">
+      <DependentUpon>ReferenceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\ReferenceList.aspx.designer.cs">
+      <DependentUpon>ReferenceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AdminAdd.aspx.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\AdminAdd.aspx.designer.cs">
+      <DependentUpon>AdminAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AdminList.aspx.cs">
+      <DependentUpon>AdminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\AdminList.aspx.designer.cs">
+      <DependentUpon>AdminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AdminUpdate.aspx.cs">
+      <DependentUpon>AdminUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\AdminUpdate.aspx.designer.cs">
+      <DependentUpon>AdminUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ArticleAdd.aspx.cs">
+      <DependentUpon>ArticleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ArticleAdd.aspx.designer.cs">
+      <DependentUpon>ArticleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ArticleUpdate.aspx.cs">
+      <DependentUpon>ArticleUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ArticleUpdate.aspx.designer.cs">
+      <DependentUpon>ArticleUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BlogAdd.aspx.cs">
+      <DependentUpon>BlogAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\BlogAdd.aspx.designer.cs">
+      <DependentUpon>BlogAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BlogList.aspx.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\BlogList.aspx.designer.cs">
+      <DependentUpon>BlogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BlogShort.aspx.cs">
+      <DependentUpon>BlogShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\BlogShort.aspx.designer.cs">
+      <DependentUpon>BlogShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CommentAdd.aspx.cs">
+      <DependentUpon>CommentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CommentAdd.aspx.designer.cs">
+      <DependentUpon>CommentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CommentList.aspx.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CommentList.aspx.designer.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CommentUpdate.aspx.cs">
+      <DependentUpon>CommentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CommentUpdate.aspx.designer.cs">
+      <DependentUpon>CommentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\GalleryShort.aspx.cs">
+      <DependentUpon>GalleryShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\GalleryShort.aspx.designer.cs">
+      <DependentUpon>GalleryShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MostSearchedAdd.aspx.cs">
+      <DependentUpon>MostSearchedAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MostSearchedAdd.aspx.designer.cs">
+      <DependentUpon>MostSearchedAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MostSearchedList.aspx.cs">
+      <DependentUpon>MostSearchedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MostSearchedList.aspx.designer.cs">
+      <DependentUpon>MostSearchedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MostSearchedUpdate.aspx.cs">
+      <DependentUpon>MostSearchedUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MostSearchedUpdate.aspx.designer.cs">
+      <DependentUpon>MostSearchedUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PopularProductShort.aspx.cs">
+      <DependentUpon>PopularProductShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PopularProductShort.aspx.designer.cs">
+      <DependentUpon>PopularProductShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PopupManagement.aspx.cs">
+      <DependentUpon>PopupManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PopupManagement.aspx.designer.cs">
+      <DependentUpon>PopupManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ProductShort.aspx.cs">
+      <DependentUpon>ProductShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ProductShort.aspx.designer.cs">
+      <DependentUpon>ProductShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ReferenceAdd.aspx.cs">
+      <DependentUpon>ReferenceAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ReferenceAdd.aspx.designer.cs">
+      <DependentUpon>ReferenceAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ReferenceList.aspx.cs">
+      <DependentUpon>ReferenceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ReferenceList.aspx.designer.cs">
+      <DependentUpon>ReferenceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ReferenceShort.aspx.cs">
+      <DependentUpon>ReferenceShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ReferenceShort.aspx.designer.cs">
+      <DependentUpon>ReferenceShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ReferenceUpdate.aspx.cs">
+      <DependentUpon>ReferenceUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ReferenceUpdate.aspx.designer.cs">
+      <DependentUpon>ReferenceUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\AccordionCategoryShortSave.aspx.cs">
+      <DependentUpon>AccordionCategoryShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\AccordionCategoryShortSave.aspx.designer.cs">
+      <DependentUpon>AccordionCategoryShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\BlogShortSave.aspx.cs">
+      <DependentUpon>BlogShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\BlogShortSave.aspx.designer.cs">
+      <DependentUpon>BlogShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BlogUpdate.aspx.cs">
+      <DependentUpon>BlogUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\BlogUpdate.aspx.designer.cs">
+      <DependentUpon>BlogUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ExternalArticleAdd.aspx.cs">
+      <DependentUpon>ExternalArticleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ExternalArticleAdd.aspx.designer.cs">
+      <DependentUpon>ExternalArticleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ExternalArticleList.aspx.cs">
+      <DependentUpon>ExternalArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ExternalArticleList.aspx.designer.cs">
+      <DependentUpon>ExternalArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ExternalArticleUpdate.aspx.cs">
+      <DependentUpon>ExternalArticleUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ExternalArticleUpdate.aspx.designer.cs">
+      <DependentUpon>ExternalArticleUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\FooterMenuShortSave.aspx.cs">
+      <DependentUpon>FooterMenuShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\FooterMenuShortSave.aspx.designer.cs">
+      <DependentUpon>FooterMenuShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\GalleryAdd.aspx.cs">
+      <DependentUpon>GalleryAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\GalleryAdd.aspx.designer.cs">
+      <DependentUpon>GalleryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\GalleryImageShortSave.aspx.cs">
+      <DependentUpon>GalleryImageShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\GalleryImageShortSave.aspx.designer.cs">
+      <DependentUpon>GalleryImageShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\GalleryList.aspx.cs">
+      <DependentUpon>GalleryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\GalleryList.aspx.designer.cs">
+      <DependentUpon>GalleryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\GalleryUpdate.aspx.cs">
+      <DependentUpon>GalleryUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\GalleryUpdate.aspx.designer.cs">
+      <DependentUpon>GalleryUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\GeneralSettingUpdate.aspx.cs">
+      <DependentUpon>GeneralSettingUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\GeneralSettingUpdate.aspx.designer.cs">
+      <DependentUpon>GeneralSettingUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\HomePageContentUpdate.aspx.cs">
+      <DependentUpon>HomePageContentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\HomePageContentUpdate.aspx.designer.cs">
+      <DependentUpon>HomePageContentUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LoginLogs.aspx.cs">
+      <DependentUpon>LoginLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\LoginLogs.aspx.designer.cs">
+      <DependentUpon>LoginLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MailSettingUpdate.aspx.cs">
+      <DependentUpon>MailSettingUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MailSettingUpdate.aspx.designer.cs">
+      <DependentUpon>MailSettingUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MenuAdd.aspx.cs">
+      <DependentUpon>MenuAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MenuAdd.aspx.designer.cs">
+      <DependentUpon>MenuAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MenuShort.aspx.cs">
+      <DependentUpon>MenuShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MenuShort.aspx.designer.cs">
+      <DependentUpon>MenuShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\GalleryShortSave.aspx.cs">
+      <DependentUpon>GalleryShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\GalleryShortSave.aspx.designer.cs">
+      <DependentUpon>GalleryShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\HomeCategoryShortSave.aspx.cs">
+      <DependentUpon>HomeCategoryShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\HomeCategoryShortSave.aspx.designer.cs">
+      <DependentUpon>HomeCategoryShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MP.Master.cs">
+      <DependentUpon>MP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\MP.Master.designer.cs">
+      <DependentUpon>MP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ProductAdd.aspx.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ProductAdd.aspx.designer.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\HomeCategoryShortSave2.aspx.cs">
+      <DependentUpon>HomeCategoryShortSave2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\HomeCategoryShortSave2.aspx.designer.cs">
+      <DependentUpon>HomeCategoryShortSave2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSave.aspx.cs">
+      <DependentUpon>MenuShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSave.aspx.designer.cs">
+      <DependentUpon>MenuShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSaveLeft.aspx.cs">
+      <DependentUpon>MenuShortSaveLeft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSaveLeft.aspx.designer.cs">
+      <DependentUpon>MenuShortSaveLeft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSaveRight.aspx.cs">
+      <DependentUpon>MenuShortSaveRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\MenuShortSaveRight.aspx.designer.cs">
+      <DependentUpon>MenuShortSaveRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\PopularProductShortSave.aspx.cs">
+      <DependentUpon>PopularProductShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\PopularProductShortSave.aspx.designer.cs">
+      <DependentUpon>PopularProductShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductCategoryOtherSave.aspx.cs">
+      <DependentUpon>ProductCategoryOtherSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductCategoryOtherSave.aspx.designer.cs">
+      <DependentUpon>ProductCategoryOtherSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductHomeSave.aspx.cs">
+      <DependentUpon>ProductHomeSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductHomeSave.aspx.designer.cs">
+      <DependentUpon>ProductHomeSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductImageShortSave.aspx.cs">
+      <DependentUpon>ProductImageShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductImageShortSave.aspx.designer.cs">
+      <DependentUpon>ProductImageShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ProductUpdate.aspx.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ProductUpdate.aspx.designer.cs">
+      <DependentUpon>ProductUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PropertyGroupList.aspx.cs">
+      <DependentUpon>PropertyGroupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PropertyGroupList.aspx.designer.cs">
+      <DependentUpon>PropertyGroupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PropertyList.aspx.cs">
+      <DependentUpon>PropertyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PropertyList.aspx.designer.cs">
+      <DependentUpon>PropertyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PropertyShort.aspx.cs">
+      <DependentUpon>PropertyShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\PropertyShort.aspx.designer.cs">
+      <DependentUpon>PropertyShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductOtherSave.aspx.cs">
+      <DependentUpon>ProductOtherSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ProductOtherSave.aspx.designer.cs">
+      <DependentUpon>ProductOtherSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\PropertyShortSave.aspx.cs">
+      <DependentUpon>PropertyShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\PropertyShortSave.aspx.designer.cs">
+      <DependentUpon>PropertyShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SeoPageList.aspx.cs">
+      <DependentUpon>SeoPageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SeoPageList.aspx.designer.cs">
+      <DependentUpon>SeoPageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SeoPageUpdate.aspx.cs">
+      <DependentUpon>SeoPageUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SeoPageUpdate.aspx.designer.cs">
+      <DependentUpon>SeoPageUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ReferenceShortSave.aspx.cs">
+      <DependentUpon>ReferenceShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\ReferenceShortSave.aspx.designer.cs">
+      <DependentUpon>ReferenceShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\SidebarCategoryShortSave.aspx.cs">
+      <DependentUpon>SidebarCategoryShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\SidebarCategoryShortSave.aspx.designer.cs">
+      <DependentUpon>SidebarCategoryShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SliderAdd.aspx.cs">
+      <DependentUpon>SliderAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SliderAdd.aspx.designer.cs">
+      <DependentUpon>SliderAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SliderList.aspx.cs">
+      <DependentUpon>SliderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SliderList.aspx.designer.cs">
+      <DependentUpon>SliderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SliderShort.aspx.cs">
+      <DependentUpon>SliderShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SliderShort.aspx.designer.cs">
+      <DependentUpon>SliderShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\SliderShortSave.aspx.cs">
+      <DependentUpon>SliderShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\SliderShortSave.aspx.designer.cs">
+      <DependentUpon>SliderShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SliderUpdate.aspx.cs">
+      <DependentUpon>SliderUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SliderUpdate.aspx.designer.cs">
+      <DependentUpon>SliderUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SssAdd.aspx.cs">
+      <DependentUpon>SssAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SssAdd.aspx.designer.cs">
+      <DependentUpon>SssAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SssList.aspx.cs">
+      <DependentUpon>SssList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SssList.aspx.designer.cs">
+      <DependentUpon>SssList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SssUpdate.aspx.cs">
+      <DependentUpon>SssUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\SssUpdate.aspx.designer.cs">
+      <DependentUpon>SssUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\TabFilterList.aspx.cs">
+      <DependentUpon>TabFilterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\TabFilterList.aspx.designer.cs">
+      <DependentUpon>TabFilterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\TabFilterShort.aspx.cs">
+      <DependentUpon>TabFilterShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\TabFilterShort.aspx.designer.cs">
+      <DependentUpon>TabFilterShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\TabFilterShortSave.aspx.cs">
+      <DependentUpon>TabFilterShortSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ShortSavePages\TabFilterShortSave.aspx.designer.cs">
+      <DependentUpon>TabFilterShortSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\Basket.cs" />
+    <Compile Include="Models\CookieAdmin.cs" />
+    <Compile Include="Models\SessionAdmin.cs" />
+    <Compile Include="Models\SessionLanguage.cs" />
+    <Compile Include="Models\SessionUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\Abstract\ICkEditorService.cs" />
+    <Compile Include="Tool\Abstract\ICookieService.cs" />
+    <Compile Include="Tool\Abstract\IExpressToolService.cs" />
+    <Compile Include="Tool\Abstract\IFormControlService.cs" />
+    <Compile Include="Tool\Abstract\IMailService.cs" />
+    <Compile Include="Tool\Abstract\ISessionService.cs" />
+    <Compile Include="Tool\Abstract\IMenuToolService.cs" />
+    <Compile Include="Tool\Concrete\CkEditorManager.cs" />
+    <Compile Include="Tool\Concrete\CookieManager.cs" />
+    <Compile Include="Tool\Concrete\ExpressToolManager.cs" />
+    <Compile Include="Tool\Concrete\FormControlManager.cs" />
+    <Compile Include="Tool\Concrete\MailServiceManager.cs" />
+    <Compile Include="Tool\Concrete\MenuToolManager.cs" />
+    <Compile Include="Tool\Concrete\SessionManager.cs" />
+    <Compile Include="Tool\StaticDataTool.cs" />
+    <Compile Include="UserControl\ucManagementPanelMenus.ascx.cs">
+      <DependentUpon>ucManagementPanelMenus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucManagementPanelMenus.ascx.designer.cs">
+      <DependentUpon>ucManagementPanelMenus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucPageSeo.ascx.cs">
+      <DependentUpon>ucPageSeo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucPageSeo.ascx.designer.cs">
+      <DependentUpon>ucPageSeo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucPaging.ascx.cs">
+      <DependentUpon>ucPaging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucPaging.ascx.designer.cs">
+      <DependentUpon>ucPaging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucReference.ascx.cs">
+      <DependentUpon>ucReference.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucReference.ascx.designer.cs">
+      <DependentUpon>ucReference.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KZ.Business\KZ.Business.csproj">
+      <Project>{153fce1a-4d94-420b-b7e2-fc3646755c02}</Project>
+      <Name>KZ.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.Core\KZ.Core.csproj">
+      <Project>{46c1dd0b-fef9-44e0-a1b7-f18831e76972}</Project>
+      <Name>KZ.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.DataAccess\KZ.DataAccess.csproj">
+      <Project>{2f302fd8-84d1-4171-bc32-ccc0898f25fc}</Project>
+      <Name>KZ.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.Entity\KZ.Entity.csproj">
+      <Project>{33f1b92e-bb25-48d9-9de8-db238d6875e6}</Project>
+      <Name>KZ.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\value.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>value1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\value.EN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>value.EN.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\value.HU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>value.HU.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59532</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

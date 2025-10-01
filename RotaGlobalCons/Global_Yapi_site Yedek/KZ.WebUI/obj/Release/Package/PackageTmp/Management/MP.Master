@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MP.master.cs" Inherits="KZ.WebUI.Management.MP" %>
+
+<%@ Register Src="~/UserControl/ucManagementPanelMenus.ascx" TagPrefix="uc1" TagName="ucManagementPanelMenus" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= ConfigurationManager.AppSettings["DomainName"] %> | Yönetim Paneli</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <!-- Styles -->
+    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/mmc-chat.css" rel="stylesheet" />
+    <link href="assets/css/lib/sidebar.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+    <link href="assets/css/lib/unix.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/tagsinput.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm1"></asp:ScriptManager>
+        <uc1:ucManagementPanelMenus runat="server" ID="ucManagementPanelMenus" />
+        <div class="header">
+            <div class="pull-left">
+                <div class="logo"><span><%= ConfigurationManager.AppSettings["DomainName"] %></span></div>
+                <div class="hamburger sidebar-toggle">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="pull-right p-r-15">
+                <ul>
+                    <li class="header-icon dib">
+                        <label class="label label-info btn-lg">
+                            <asp:Literal runat="server" ID="ltlLanguageName"></asp:Literal></label>
+                    </li>
+                    <li class="header-icon dib">
+                        <img class="avatar-img" src="assets/images/avatar/1.jpg" alt="" />
+                        <span class="user-avatar">
+                            <asp:Literal ID="ltlNameSurname" runat="server"></asp:Literal>
+                            <asp:HiddenField runat="server" ID="hfUserId" />
+                            <i class="ti-angle-down f-s-10"></i></span>
+                        <div class="drop-down dropdown-profile">
+                            <div class="dropdown-content-body">
+                                <ul>
+                                    <li><a href="Profile"><i class="ti-user"></i><span>Profil</span></a></li>
+                                    <li>
+                                        <asp:LinkButton runat="server" ID="lnkLogOut" OnClick="lnkLogOut_OnClick" CausesValidation="False"><i class="ti-power-off"></i><span>Güvenli Çıkış</span></asp:LinkButton></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="content" runat="server" />
+        <br />
+        <p style="text-align: right; padding-right: 2%; color: #000;">@ <%= DateTime.Now.Year == 2018 ? "2018" : "2018 -" + DateTime.Now.Year.ToString()  %> FTC YAZILIM | Versiyon: <%= ConfigurationManager.AppSettings["Version"].ToString() %></p>
+
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <!-- jquery vendor -->
+        <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
+        <!-- nano scroller -->
+        <script src="assets/js/lib/sidebar.js"></script>
+        <!-- sidebar -->
+        <script src="assets/js/lib/bootstrap.min.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/lib/mmc-common.js"></script>
+        <script src="assets/js/lib/mmc-chat.js"></script>
+        <!--  Chart js -->
+        <%--<script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+        <script src="assets/js/lib/chart-js/chartjs-init.js"></script>--%>
+        <!-- // Chart js -->
+        <!--  Datamap -->
+        <%--<script src="assets/js/lib/datamap/d3.min.js"></script>
+        <script src="assets/js/lib/datamap/topojson.js"></script>
+        <script src="assets/js/lib/datamap/datamaps.world.min.js"></script>
+        <script src="assets/js/lib/datamap/datamap-init.js"></script>--%>
+        <!-- // Datamap -->
+        -->
+        <%--<script src="assets/js/lib/weather/jquery.simpleWeather.min.js"></script>--%>
+        <%-- <script src="assets/js/lib/weather/weather-init.js"></script>--%>
+        <%--<script src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+        <script src="assets/js/lib/owl-carousel/owl.carousel-init.js"></script>--%>
+        <script src="assets/js/lib/sweetalert/sweetalert.min.js"></script>
+        <script src="assets/js/lib/sweetalert/sweetalert.init.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <script src="assets/js/lib/data-table/datatables.min.js"></script>
+        <script src="assets/js/lib/data-table/dataTables.bootstrap.min.html"></script>
+        <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+        <script src="assets/js/lib/data-table/buttons.bootstrap.min.html"></script>
+        <script src="assets/js/lib/data-table/jszip.min.js"></script>
+        <script src="assets/js/lib/data-table/pdfmake.min.js"></script>
+        <script src="assets/js/lib/data-table/vfs_fonts.js"></script>
+        <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+        <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
+        <script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
+        <script src="assets/js/lib/data-table/datatables-init.js"></script>
+        <script src="assets/js/tagsinput.js"></script>
+
+       
+
+        <!-- scripit init-->
+        <script type="text/javascript">
+            function errorMessage(link) {
+                sweetAlert("İşlem Başarısız", "Lütfen daha sonra tekrar deneyiniz veya sistem yöneticinize başvurunuz.", "error");
+                $("#closeButton").click(function () {
+                    window.location.href = link;
+                });
+            }
+
+            function successMessage(link) {
+                sweetAlert("İşlem Başarılı", "İşleminiz başarı ile gerçekleştirilmiştir.", "success");
+                $("#closeButton").click(function () {
+                    window.location.href = link;
+                });
+            }
+
+            function deleteInfoMessage(link) {
+                sweetAlert("Uyarı", "Silmek istediğiniz hizmete ait daha önceden verilen siparişler olduğu için bu hizmet silememektedir.", "error");
+                $("#closeButton").click(function () {
+                    window.location.href = link;
+                });
+            }
+
+            function infoMessage(message) {
+                sweetAlert("Uyarı", message, "error");
+            }
+
+            //Sadece rakam girişi sağlar.
+            function isNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+
+            //Sadece rakam ve metin girişi sağlar.
+            function isTextNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+
+                if (charCode === 46 || charCode === 32 || charCode === 33 || charCode === 58 || charCode === 33 || charCode === 40 || charCode === 41 || charCode === 47 || charCode === 38 || charCode === 63 || charCode === 44)
+                    return true;
+
+                if (charCode >= 64 && charcode <= 90 || charCode >= 48 && charCode <= 57) {
+                    return true;
+                }
+                return false;
+            }
+
+            //Fiyat girişi sağlamaktadır.
+            function isPrice(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+
+                if (charCode === 44)
+                    return true;
+
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <asp:ContentPlaceHolder runat="server" ID="CustomCode" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MenuShortSave.aspx.cs" Inherits="KZ.WebUI.Management.MenuShortSave" %>

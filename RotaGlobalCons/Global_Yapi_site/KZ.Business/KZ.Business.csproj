@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{153FCE1A-4D94-420B-B7E2-FC3646755C02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KZ.Business</RootNamespace>
+    <AssemblyName>KZ.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.6.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.6\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IArticleService.cs" />
+    <Compile Include="Abstract\ICommentService.cs" />
+    <Compile Include="Abstract\IExtarnelArticleService.cs" />
+    <Compile Include="Abstract\IGalleryImageService.cs" />
+    <Compile Include="Abstract\IGalleryService.cs" />
+    <Compile Include="Abstract\IGeneralSettingService.cs" />
+    <Compile Include="Abstract\IHomePageContentService.cs" />
+    <Compile Include="Abstract\ILanguageService.cs" />
+    <Compile Include="Abstract\ILoginLogService.cs" />
+    <Compile Include="Abstract\IMailSettingService.cs" />
+    <Compile Include="Abstract\IMenuService.cs" />
+    <Compile Include="Abstract\IBlogService.cs" />
+    <Compile Include="Abstract\IMostSearchedService.cs" />
+    <Compile Include="Abstract\IPopupService.cs" />
+    <Compile Include="Abstract\IProductImageService.cs" />
+    <Compile Include="Abstract\IProductMenuService.cs" />
+    <Compile Include="Abstract\IProductPropertyService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Abstract\IPropertyGroupService.cs" />
+    <Compile Include="Abstract\IPropertyService.cs" />
+    <Compile Include="Abstract\IReferenceService.cs" />
+    <Compile Include="Abstract\ISeoPageService.cs" />
+    <Compile Include="Abstract\ISeoUrlRedirectService.cs" />
+    <Compile Include="Abstract\ISliderService.cs" />
+    <Compile Include="Abstract\ISssService.cs" />
+    <Compile Include="Abstract\ITabFilterProductService.cs" />
+    <Compile Include="Abstract\ITabFilterService.cs" />
+    <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Concrete\ArticleManager.cs" />
+    <Compile Include="Concrete\CommentManager.cs" />
+    <Compile Include="Concrete\ExtarnelArticleManager.cs" />
+    <Compile Include="Concrete\GalleryImageManager.cs" />
+    <Compile Include="Concrete\GalleryManager.cs" />
+    <Compile Include="Concrete\GeneralSettingManager.cs" />
+    <Compile Include="Concrete\HomePageContentManager.cs" />
+    <Compile Include="Concrete\LanguageManager.cs" />
+    <Compile Include="Concrete\LoginLogManager.cs" />
+    <Compile Include="Concrete\MailSettingManager.cs" />
+    <Compile Include="Concrete\MenuManager.cs" />
+    <Compile Include="Concrete\BlogManager.cs" />
+    <Compile Include="Concrete\MostSearchedManager.cs" />
+    <Compile Include="Concrete\PopupManager.cs" />
+    <Compile Include="Concrete\ProductImageManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\ProductMenuManager.cs" />
+    <Compile Include="Concrete\ProductPropertyManager.cs" />
+    <Compile Include="Concrete\PropertyGroupManager.cs" />
+    <Compile Include="Concrete\PropertyManager.cs" />
+    <Compile Include="Concrete\ReferenceManager.cs" />
+    <Compile Include="Concrete\SeoPageManager.cs" />
+    <Compile Include="Concrete\SeoUrlRedirectManager.cs" />
+    <Compile Include="Concrete\SliderManager.cs" />
+    <Compile Include="Concrete\SssManager.cs" />
+    <Compile Include="Concrete\StaticGeneralSettingManager.cs" />
+    <Compile Include="Concrete\TabFilterManager.cs" />
+    <Compile Include="Concrete\TabFilterProductManager.cs" />
+    <Compile Include="Concrete\UserManager.cs" />
+    <Compile Include="DependencyResolvers\Ninject\BusinessModule.cs" />
+    <Compile Include="DependencyResolvers\Ninject\InstanceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KZ.Core\KZ.Core.csproj">
+      <Project>{46c1dd0b-fef9-44e0-a1b7-f18831e76972}</Project>
+      <Name>KZ.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.DataAccess\KZ.DataAccess.csproj">
+      <Project>{2f302fd8-84d1-4171-bc32-ccc0898f25fc}</Project>
+      <Name>KZ.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KZ.Entity\KZ.Entity.csproj">
+      <Project>{33f1b92e-bb25-48d9-9de8-db238d6875e6}</Project>
+      <Name>KZ.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

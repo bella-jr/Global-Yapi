@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GalleryShortSave.aspx.cs" Inherits="KZ.WebUI.Management.ShortSavePages.GalleryShortSave" %>

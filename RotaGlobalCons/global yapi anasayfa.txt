@@ -1,0 +1,504 @@
+
+
+Hakkımızda
+---------------------
+
+<section class="about-style1-area">
+<div class="container">
+<div class="row">
+<div class="col-xl-5">
+<div class="about-style1-img-box">
+<ul>
+	<li>
+	<div class="about-style1-img-box__single"><img alt="GLOBAL İNŞAAT" src="/site_files/images/about/about-style1-img-1.jpg"></div>
+	</li>
+	<li>
+	<div class="about-style1-img-box__single"><img alt="GLOBAL İNŞAAT" src="/site_files/images/about/about-style1-img-2.jpg"></div>
+	</li>
+</ul>
+
+<div class="certified-box-style1">
+<div><img style="width:80px;height:80px" alt="GLOBAL İNŞAAT" src="/site_files/images/about/sekil-1.png" /></div>
+
+<div class="title">
+<h6>11 Yıllık</h6>
+
+<h2>İnşaat Tecrübesi</h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-xl-7">
+<div class="about-style1__content-box">
+<div class="sec-title">
+<div class="sub-title">
+<div class="border-left">&nbsp;</div>
+
+<h5>HAKKIMIZDA</h5>
+</div>
+
+<h2>Yenilikçi ve Dayanıklı Yapılar İçin Rota Global Construction</h2>
+</div>
+
+<div class="about-style1__content-box__inner">
+<div class="solution-box">
+<ul>
+	<li>
+	<div class="single-solution-box">
+	<div class="icon"><span class="icon-house"></span></div>
+
+	<div class="inner-title">
+	<h3>Kaba İşler</h3>
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="single-solution-box">
+	<div class="icon"><span class="icon-building"></span></div>
+
+	<div class="inner-title">
+	<h3>İnce İşler</h3>
+	</div>
+	</div>
+	</li>
+</ul>
+</div>
+
+<div class="inner-text">
+<h3>Rota Global Construction: Hızlı, Kaliteli, Güvenli</h3>
+
+<p>İnşaat yüksek mühendisi Arif Cihat Akkoyun tarafından kurulan Rota Global Construction, inşaat sektöründe Türkiye ile Avrupa ve Afrika kıtalarında birçok ülkede uluslararası boyutta kabul gören kurumsal firmalarda ve büyük ölçekli projelerde alt yüklenici olarak çözüm ortağı olan firmamız, edinmiş olduğu deneyim, tecrübe ve birikim ile birlikte güncel gelişmeleri ve teknolojiyi de takip ederek, yüklenicisi olduğu projelerde entegre yönetim sistemini ön planda tutarak, yönetimde kaliteden taviz vermeden özen, özveri ve güven içerisinde hizmet vermektedir.</p>
+&nbsp;
+<div class="single-blog-style1 " style="margin-top:40px">
+    <div class="text-holder" style="padding:0; margin-left:0;">
+        <div class="btn-box">
+            <a href="/tr/menu/biz-kimiz/3">Devamı...</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+İnşaat yüksek mühendisi Arif Cihat Akkoyun tarafından kurulan Rota Global Construction, inşaat sektöründe Türkiye ile Avrupa ve Afrika kıtalarında birçok ülkede uluslararası boyutta kabul gören kurumsal firmalarda ve büyük ölçekli projelerde alt yüklenici olarak çözüm ortağı olan firmamız, edinmiş olduğu deneyim, tecrübe ve birikim ile birlikte güncel gelişmeleri ve teknolojiyi de takip ederek, yüklenicisi olduğu projelerde entegre yönetim sistemini ön planda tutarak, yönetimde kaliteden taviz vermeden özen, özveri ve güven içerisinde hizmet vermektedir.
+&nbsp;
+
+Toplu konut, fabrika, iş merkezi gibi projelerde kaba işler ve ince işler başta olmak üzere, mekanik ve elektrik işlerinde de çözüm ortaklığı bulunan firmamız yatırımcılarına gerek tasarım gerek uygulama şeklinde anahtar teslim yapabilecek yapılanmaya sahiptir.
+&nbsp;
+
+Bununla birlikte birçok ülkede insan kaynakları ağına sahip olup, talep halinde personel tedariki ihtiyaçlarını da karşılama konusunda destek verebilmektedir.
+
+Global İnşaat, inşaat sektöründe güçlü bir geçmişe sahip, yenilikçi ve müşteri odaklı bir firmadır. 1990'lı yılların başından bu yana, kaliteli işçilik ve güvenilir projelerle sektördeki varlığını sürdüren Global İnşaat, hem yurtiçinde hem de yurtdışında birçok önemli projeye imza atmıştır.
+
+
+Hizmetlerimiz
+-----------------------
+
+
+
+<section class="service-style1-area">
+<div class="container">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-title">
+<div class="sec-title">
+<div class="sub-title">
+<div class="border-left">&nbsp;</div>
+
+<h5>HİZMETLERİMİZ</h5>
+</div>
+
+<h2>Neler Yapıyoruz?</h2>
+
+<div class="text">
+<p>Hizmetlerimiz, konut, ticari yapı inşaatları, renovasyon, proje yönetimi ve sürdürülebilir çözümlerle kaliteli ve güvenli yapılar sunmaktadır.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-tab"><!--Start Service Style1 Tab Button-->
+<div class="service-style1-tab__button">
+<ul class="tabs-button-box clearfix">
+	<li class="tab-btn-item active-btn-item" data-tab="#installation">
+	<div class="inner">
+<span class="icon-broken-house"></span>
+	<h3>Kaba İşler</h3>
+	</div>
+	</li>
+	<li class="tab-btn-item" data-tab="#cornering">
+	<div class="inner">
+<span class="icon-joist"></span>
+	<h3>İnce İşler</h3>
+	</div>
+	</li>
+	<li class="tab-btn-item" data-tab="#siding">
+	<div class="inner">
+<span class="icon-roof1"></span>
+	<h3>Altyapı ve Peyzaj</h3>
+	</div>
+	</li>
+	<li class="tab-btn-item" data-tab="#frame">
+	<div class="inner">
+<span class="icon-joist-1"></span>
+	<h3>Zemin İşleri</h3>
+	</div>
+	</li>
+	<li class="tab-btn-item" data-tab="#layer">
+	<div class="inner">
+<span class="icon-roof-1"></span>
+	<h3>Proje Yönetimi</h3>
+	</div>
+	</li>
+	<li class="tab-btn-item" data-tab="#damage">
+	<div class="inner">
+<span class="icon-construction"></span>
+	<h3>Diğer...</h3>
+	</div>
+	</li>
+</ul>
+</div>
+<!--End Service Style1 Tab Button--><!--Start Tabs Content Box-->
+
+<div class="tabs-content-box"><!--Tab-->
+<div class="tab-content-box-item tab-content-box-item-active" id="installation">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>Kaba İşler</h2>
+
+<p class="yazi">Armeda Yapı, kaba inşaat çalışmalarında gösterdiği üstün performans ve teknik yetkinlikle sektörde güvenin simgesi haline gelmiştir. Temelden çatıya kadar taşıyıcı sistemin her aşamasında en yüksek mühendislik standartlarını uygulayan firmamız, detaylara verdiği önem ve disiplinli çalışma anlayışıyla fark yaratır. Sahip olduğumuz deneyimli ekip, modern makine parkuru ve malzeme kalitesi sayesinde, kaba işlerde hız, sağlamlık ve mükemmellik dengesini kusursuz biçimde sağlar. Armeda Yapı ile inşa edilen her yapı, güvenin, sağlamlığın ve profesyonelliğin somut bir örneğidir.</p>
+
+<div class="bottom-box">
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Mühendislik Odaklı Yaklaşım</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Deneyimli Ekip ve Ekipman</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Malzeme Kalitesi</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Zamanında ve Eksiksiz Teslimat</p>
+	</li>
+</ul>
+</div>
+
+<div class="btn-box"><a href="/tr/menu/konut/12">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/konut.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tab-->
+
+<div class="tab-content-box-item" id="cornering">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>İnce İşler</h2>
+
+<p class="yazi">Armeda Yapı, sadece sağlam yapılar inşa etmekle kalmaz; aynı zamanda her detayda estetik, işçilik kalitesi ve fonksiyonelliği ön planda tutarak yaşam alanlarını mükemmelleştirir. İnce işler aşamasında gösterdiğimiz titizlik, projelerimize karakter ve değer kazandırır. Duvar kaplamalarından zemin döşemelerine, boya işlerinden marangozluk detaylarına kadar her adımda uzman ekiplerle çalışır, kusursuz bir sonuç hedefleriz. Armeda Yapı’nın ince işlerdeki farkı; malzeme seçimi, detaylara gösterilen özen ve yüksek işçilik kalitesiyle ortaya çıkar. Her proje sonunda ortaya çıkan iş, firmamızın vizyonunu ve kalitesini yansıtan bir imza niteliğindedir.</p>
+
+<div class="bottom-box">
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Detaylara Hassasiyet</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Tasarım ve Uyum</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Kaliteli Malzeme Kullanımı</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Usta İşçilik</p>
+	</li>
+</ul>
+</div>
+
+<div class="btn-box"><a href="/tr/menu/ticari-yapilar/13">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/ince-main.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tab-->
+
+<div class="tab-content-box-item" id="siding">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>Altyapı ve Peyzaj</h2>
+
+<p class="yazi">Armeda Yapı, altyapı ve peyzaj uygulamalarında hem işlevselliği hem de çevresel estetiği bir arada sunarak projelere değer katar. Altyapı sistemlerinde sağlamlık, sürdürülebilirlik ve teknik doğruluk önceliğimizdir. Peyzaj düzenlemelerinde ise doğaya saygılı, göz alıcı ve konforlu alanlar oluştururuz. Yeşil alanlardan drenaj sistemlerine, otoparklardan yaya yollarına kadar her detay, hem mühendislik hem de tasarım açısından kusursuz planlanır. Armeda Yapı ile dış mekânlar sadece çevre düzenlemesi değil, yaşam alanının ayrılmaz bir parçası haline gelir.</p>
+
+<div class="bottom-box">
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Teknik Altyapı Uzmanlığı</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Estetik Peyzaj Anlayışı</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Dayanıklı Uygulama</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Yaşam Odaklı Alanlar</p>
+	</li>
+</ul>
+</div>
+
+<div class="btn-box"><a href="/tr/menu/altyapi-ve-peyzaj/14">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/renovasyon.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tab-->
+
+<div class="tab-content-box-item" id="frame">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>Zemin İşleri</h2>
+
+<p class="yazi">Armeda Yapı, zemin işlerinde yüzey sağlamlığı, düzgünlük ve uygulama kalitesiyle öne çıkar. Kat döşemelerinden endüstriyel zemin kaplamalarına kadar her projede, kullanım amacına uygun doğru teknikleri uygularız. Hem yapısal hem de estetik açıdan beklentileri aşan sonuçlar sunmak için en güncel teknolojilerle çalışır, yüzeylerde pürüzsüzlük ve dayanıklılığı garanti ederiz. Armeda Yapı’nın zemin işlerindeki başarısı, uzun vadede çatlamayan, deforme olmayan ve ilk günkü kalitesini koruyan yüzeylerle kendini gösterir.</p>
+
+<div class="bottom-box">
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Yüzey Kalitesi ve Düzgünlük</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Uygulama Çeşitliliği</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Dayanıklılık Garantisi</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Estetik ve Fonksiyon Bütünlüğü</p>
+	</li>
+</ul>
+</div>
+
+<div class="btn-box"><a href="/tr/menu/zemin-isleri/15">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/projeyonetim.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tab-->
+
+<div class="tab-content-box-item" id="layer">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>Proje Yönetimi</h2>
+
+<p class="yazi">Armeda Yapı, proje yönetimini sadece bir süreç değil, başarının anahtarı olarak görür. Planlama, kaynak yönetimi, maliyet kontrolü ve zaman çizelgesine sadık kalma konularında yüksek profesyonellik sunarız. Her projenin en başından teslimine kadar tüm aşamaları sistematik bir şekilde yönetir, müşterilerimizle şeffaf ve güçlü bir iletişim kurarız. Bu yaklaşımımız, tüm projelerde hem teknik hem de operasyonel olarak sorunsuz ilerlemeyi ve zamanında teslimatı garanti altına alır.</p>
+
+<div class="bottom-box">
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Disiplinli Süreç Takibi</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Zaman ve Maliyet Kontrolü</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Koordinasyon ve İletişim</p>
+	</li>
+	<li>
+<span class="icon-right-1"></span>
+	<p>Kalite Güvencesi</p>
+	</li>
+</ul>
+</div>
+
+<div class="btn-box"><a href="/tr/menu/ic-mekan-tasarimi/16">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/ictasarim.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Tab-->
+
+<div class="tab-content-box-item" id="damage">
+<div class="service-style1-tab-content-box-item">
+<div class="row">
+<div class="col-xl-12">
+<div class="service-style1-content-box">
+<div class="text-box">
+<h2>Diğer Hizmetler...</h2>
+
+<div class="btn-box"><a href="/tr/menu/mufettislik/17">Devamını Görüntüle <span class="icon-right-1"></span></a></div>
+</div>
+
+<div class="img-box"><img alt="GLOBAL İNŞAAT" src="/site_files/images/mufettislik.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+RAKAMLARLA BİZ
+------------------------------
+<section class="fact-counter-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="fact-counter_box">
+                    <div class="border-top-color"></div>
+                    <ul class="clearfix">
+
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="icon">
+                                <span class="icon-roof"></span>
+                            </div>
+                            <div class="outer-box">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="7088">0</span>
+                                </div>
+                                <div class="title">
+                                    <h6>Tamamlanan Projeler</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="icon">
+                                <span class="icon-worker-1"></span>
+                            </div>
+                            <div class="outer-box">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="30">0</span>
+                                    <i class="icon-plus"></i>
+                                </div>
+                                <div class="title">
+                                    <h6>Ekip Üyeleri</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="icon">
+                                <span class="icon-rating"></span>
+                            </div>
+                            <div class="outer-box">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="1700">0</span>
+                                    <i class="icon-plus"></i>
+                                </div>
+                                <div class="title">
+                                    <h6>Müşteri Memnuniyeti</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="icon">
+                                <span class="icon-skyscrapers1"></span>
+                            </div>
+                            <div class="outer-box">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="17">0</span>
+                                </div>
+                                <div class="title">
+                                    <h6>Şubelerimiz</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

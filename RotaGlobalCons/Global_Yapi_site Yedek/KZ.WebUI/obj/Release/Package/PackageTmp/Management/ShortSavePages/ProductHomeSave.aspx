@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductHomeSave.aspx.cs" Inherits="KZ.WebUI.Management.ShortSavePages.ProductHomeSave" %>
